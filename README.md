@@ -7,7 +7,7 @@ This project is a basic website structure that includes HTML, CSS, and JavaScrip
 ```
 DBI WEBSITE
 │
-│── index.html
+│── index.html│  
 │── style.css
 │── js
 │── app.js

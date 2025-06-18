@@ -1,15 +1,30 @@
 document.addEventListener('DOMContentLoaded', function () {
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', function () {
+      navLinks.classList.toggle('active');
+    });
+    // Optional: close sidebar when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
   navToggle.addEventListener('click', function () {
     navLinks.classList.toggle('active');
   });
 
-  // Add to Cart functionality
+  // --- Add to Cart functionality (if needed for your UI) ---
   let cartCount = 0;
   const cartCountElem = document.getElementById('cart-count');
   const addToCartButtons = document.querySelectorAll('.add-to-cart');
-
   addToCartButtons.forEach(btn => {
     btn.addEventListener('click', function () {
       cartCount++;
