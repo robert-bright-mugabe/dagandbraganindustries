@@ -634,23 +634,24 @@ footer {
   .nav-links {
     position: fixed;
     top: 0;
-    right: -250px;
+    right: 0;
     height: 100vh;
     width: 220px;
-    background: rgba(9, 231, 60, 0.165); /* semi-transparent for glass effect */
+    background: rgba(255,255,255,0.75);
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     box-shadow: -2px 0 12px rgba(0,0,0,0.08);
     flex-direction: column;
     align-items: flex-start;
     padding: 2em 1.5em;
-    transition: right 0.3s;
+    transition: transform 0.3s;
     z-index: 1000;
     display: flex;
     border-left: 1.5px solid rgba(200,200,200,0.18);
+    transform: translateX(100%); /* Completely hidden by default */
   }
   .nav-links.active {
-    right: 0;
+    transform: translateX(0); /* Slide in when active */
   }
   .nav-toggle {
     display: flex;
