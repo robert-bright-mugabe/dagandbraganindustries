@@ -5,14 +5,12 @@ This project is a basic website structure that includes HTML, CSS, and JavaScrip
 ## Project Structure
 
 ```
-my-website
-├── src
-│   ├── html
-│   │   └── index.html
-│   ├── css
-│   │   └── style.css
-│   └── js
-│       └── app.js
+DBI WEBSITE
+│
+│── index.html
+│── style.css
+│── js
+│── app.js
 ```
 
 ## Getting Started
