@@ -352,7 +352,7 @@ function renderOrderConfirmation(formData, cart, total) {
       Your order <strong>#${orderNumber}</strong> has been placed.</p>
       <ul>${itemsHtml}</ul>
       <div class="cart-total">
-        <strong>Total Paid:</strong> UGX ${total.toLocaleString()}
+        <strong>Total Bill:</strong> UGX ${total.toLocaleString()}
       </div>
       <p>
         <strong>Delivery Address:</strong><br>
