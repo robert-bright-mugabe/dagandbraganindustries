@@ -4,23 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dag and Bragan Industries</title>
-  <link rel="stylesheet" href="./style.css">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init({
-        publicKey: "B69DilXFMdTl_nv2D",
-      });
-    })();
-  </script>
+  <title>Products | Dag and Bragan Industries</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!-- Navbar (same as index.html) -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="#" class="nav-logo">Dag & Bragan</a>
+      <a href="index.html" class="nav-logo">Dag & Bragan</a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -40,87 +32,17 @@
       </ul>
     </div>
   </nav>
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Dag and Bragan Industries</h1>
-      <p class="tagline">Cleaning Made Powerful, Naturally.</p>
-      <div class="cta-buttons">
-        <a href="#" class="btn primary">Shop Now</a>
-        <a href="#" class="btn secondary">Learn More</a>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="./images/cleaning-products.jpg" alt="Cleaning Products">
-    </div>
-  </header>
+
   <main>
     <section class="product-showcase" id="products">
       <h2>Our Eco-Friendly Products</h2>
       <div class="products">
-        <div class="product-card">
-          <img src="./images/liquid-deterget.jpg" alt="Liquid Detergent">
-          <h3>Liquid Detergent</h3>
-          <p>Powerful plant-based formula for spotless laundry. Gentle on fabrics, tough on stains.</p>
-          <button class="btn primary add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="./images/toilet-bowl-cleaner.jpg" alt="Toilet Bowl Cleaner">
-          <h3>Toilet Bowl Cleaner</h3>
-          <p>Eco-safe cleaner that removes tough stains and deodorizes, leaving your bathroom fresh.</p>
-          <button class="btn primary add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product-card">
-          <img src="./images/disinfectant-spray.jpg" alt="Disinfectant Spray">
-          <h3>Disinfectant Spray</h3>
-          <p>Natural disinfectant spray kills 99.9% of germs. Safe for your family and the environment.</p>
-          <button class="btn primary add-to-cart">Add to Cart</button>
-        </div>
+        <!-- Product cards will be rendered dynamically by app.js -->
       </div>
-    </section>
-    <section class="about-us" id="about-us">
-      <div class="about-content">
-        <h2>About Us</h2>
-        <p>
-          <strong>Dag and Bragan Industries</strong> is dedicated to making powerful cleaning accessible to
-          everyone—naturally. Our mission is to deliver affordable, high-quality cleaning solutions that don’t
-          compromise on sustainability. We believe in protecting your home and the planet, offering products that are
-          safe, effective, and eco-friendly. Join us in our vision for a cleaner, greener future where quality and
-          affordability go hand in hand with environmental responsibility.
-        </p>
-      </div>
-    </section>
-    <section class="contact-section" id="contact-section">
-      <h2>Contact Us</h2>
-      <div class="contact-container">
-        <form class="contact-form" id="contact-form">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="user_name" required>
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="user_email" required>
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
-          <button type="submit" class="btn primary" onclick="sendMail()">Send Message</button>
-        </form>
-        <div class="contact-info">
-          <h3>Dag and Bragan Industries</h3>
-          <p><strong>Phone:</strong> (555) 123-4567</p>
-          <p><strong>Email:</strong> info@dagbragan.com</p>
-          <p><strong>Location:</strong> 123 Greenway Blvd, Eco City, USA</p>
-        </div>
-      </div>
-    </section>
-    <section class="newsletter-section">
-      <h2>Subscribe to Our Newsletter</h2>
-      <form class="newsletter-form">
-        <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Enter your email address"
-          required>
-        <button type="submit" class="btn primary">Subscribe</button>
-      </form>
     </section>
   </main>
+
+  <!-- Footer (same as index.html) -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-brand">
@@ -172,9 +94,9 @@
       </div>
     </div>
   </footer>
-  <!-- EmailJS SDK -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script src="./app.js"></script>
+
+  <!-- JS: This enables all cart/shop functionality -->
+  <script src="app.js"></script>
 </body>
 
 </html>
